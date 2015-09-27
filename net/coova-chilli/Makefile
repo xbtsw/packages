@@ -30,6 +30,7 @@ PKG_CONFIG_DEPENDS := \
   COOVACHILLI_DNSLOG \
   COOVACHILLI_UAMDOMAINFILE \
   COOVACHILLI_LARGELIMITS \
+  COOVACHILLI_EAPOLENABLE \
   COOVACHILLI_NOSSL \
   COOVACHILLI_MATRIXSSL \
   COOVACHILLI_CYASSL \
@@ -111,6 +112,7 @@ define Build/Configure
 	$(if $(CONFIG_COOVACHILLI_MINIPORTAL),--enable,--disable)-miniportal \
 	$(if $(CONFIG_COOVACHILLI_USERAGENT),--enable,--disable)-useragent \
 	$(if $(CONFIG_COOVACHILLI_LARGELIMITS),--enable,--disable)-largelimits \
+	$(if $(CONFIG_COOVACHILLI_EAPOLENABLE),--enable,--disable)-eapol \
 	$(if $(CONFIG_COOVACHILLI_UAMDOMAINFILE),--enable,--disable)-uamdomainfile \
 	$(if $(CONFIG_COOVACHILLI_MATRIXSSL),--with,--without)-matrixssl \
 	$(if $(CONFIG_COOVACHILLI_CYASSL),--with,--without)-cyassl \
