@@ -1,0 +1,13 @@
+--- a/src/chilli_limits.h
++++ b/src/chilli_limits.h
+@@ -18,8 +18,8 @@
+  * 
+  */
+ 
+-#ifndef _LIMITS_H
+-#define _LIMITS_H
++#ifndef _CHILLI_LIMITS_H
++#define _CHILLI_LIMITS_H
+ 
+ /*
+  * extracted from various .h files, needs some cleanup.
